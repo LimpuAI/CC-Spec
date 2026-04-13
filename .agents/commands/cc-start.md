@@ -1,6 +1,7 @@
 # cc-start
 Initialize new feature development workflow with safety checks and database backup.
 
+REQUIRED: Load skill `arch-design-expert` first to acquire architecture design expertise
 REQUIRED: Perform safety checks and load project context before starting
 REQUIRED: Detect database configurations and execute backup if found
 REQUIRED: Ask user confirmation if no database configuration detected
@@ -13,23 +14,26 @@ REQUIRED: Iterate with user through requirements discussion process
 REQUIRED: Focus on understanding user's actual needs and scope preferences
 REQUIRED: Continue until user explicitly confirms the final requirements
 REQUIRED: Follow simplified workflow: requirements → design → tasks
+REQUIRED: Scan all `.specs/*/might-it-be.md` files for items related to this feature before generating spec documents
 
 PROHIBITED: Proceeding without database backup when database detected
 PROHIBITED: Starting with dirty Git working directory
 PROHIBITED: Using complex academic documentation formats
 PROHIBITED: Creating overdesigned specifications
+PROHIBITED: Ignoring relevant might-it-be.md items that could influence requirements or design
 
 Simplified Workflow Sequence:
 1. Safety checks and project context loading
-2. Database backup (immediate if detected, ask if not)  
+2. Database backup (immediate if detected, ask if not)
 3. Git working directory verification and branch creation
 4. Ask user: "What feature do you want to build?" and gather detailed requirements
-5. Iterate with user to clarify requirements until user confirms
-6. Generate requirements.md (what to build)
-7. Generate design.md (how to build)
-8. Generate tasks.md (step by step)
-9. Create session.md for session tracking
-10. Ready to start development with cc-next
+5. Scan might-it-be.md — search all `.specs/*/might-it-be.md` for items relevant to this feature; present findings to user as context (forward-looking insights, deferred TODOs, past controversies) and incorporate into requirements discussion
+6. Iterate with user to clarify requirements until user confirms
+7. Generate requirements.md (what to build)
+8. Generate design.md (how to build)
+9. Generate tasks.md (step by step)
+10. Create `.specs/session.md` for session tracking
+11. Ready to start development with cc-next
 
 Requirements Template:
 ```
