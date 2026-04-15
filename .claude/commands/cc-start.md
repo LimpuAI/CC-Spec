@@ -1,6 +1,7 @@
 # cc-start
 Initialize new feature development workflow with safety checks and database backup.
 
+REQUIRED: Load skill `prd-expert` first to acquire requirements analysis expertise
 REQUIRED: Load skill `arch-design-expert` first to acquire architecture design expertise
 REQUIRED: Perform safety checks and load project context before starting
 REQUIRED: Detect database configurations and execute backup if found
